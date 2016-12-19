@@ -1,0 +1,23 @@
+{
+  "name": "barkrawl",
+  "version": "1.0.0",
+  "description": "Bars are for dogs too!",
+  "main": "server.js",
+  "dependencies": {
+    "node-yelp-v3": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aer03280/Barkrawl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aer03280/Barkrawl/issues"
+  },
+  "homepage": "https://github.com/aer03280/Barkrawl#readme"
+}
