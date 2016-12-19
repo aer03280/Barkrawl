@@ -1,18 +1,26 @@
 'use strict';
 (function (module) {
-  var bar = {};
+  var Bar = {};
 
-  bar.allBars = [];
+  Bar.allBars = [];
 
-  function Bar(opts){
-    opts.forEach(function(element, index, array){
+  function Business(opts){
+    opts.forEach(function(element){
       this[keys] = element[keys];
     },this);
   }
 
   Bar.requestData = function(){
-    
-  };
+    $.ajax({
+      type: 'GET',
+      url: 'https://api.yelp.com/v3/businesses/search?categories=bars&term=dogs%20allowed&location=seattle',
+      headers: {'Authorization': 'Bearer _7x37AIhk_hdml_p5LSrM_u3-O6wZnfHzwa6ZjykVSX-chGpwTNMqcBumtMCqqzOmyTmokrffDFiiqpmLCikz3c_eU3MjEM5E-I010wgsdbPZEiOMDr5Z7KbJEhUWHYx'},
+      success: function(data) {
+        Bar.allBars = data;
+        console.table(Bar.allBars);
 
-  module.bar = bar;
+      }
+    });
+  };
+  module.Bar = Bar;
 })(window);
