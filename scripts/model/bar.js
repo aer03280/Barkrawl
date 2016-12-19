@@ -4,6 +4,7 @@
 
   Bar.allBars = [];
 
+//I have a feeling we need to refactor this still -nikko
   function Business(opts){
     opts.forEach(function(element){
       this[keys] = element[keys];

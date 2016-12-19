@@ -4,7 +4,8 @@
   "description": "Bars are for dogs too!",
   "main": "server.js",
   "dependencies": {
-    "node-yelp-v3": "^2.3.0"
+    "node-yelp-v3": "^2.3.0",
+    "express": "4.14.0"
   },
   "devDependencies": {},
   "scripts": {
