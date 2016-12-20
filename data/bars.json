@@ -1,0 +1,863 @@
+{
+  "businesses": [
+    {
+      "review_count": 38,
+      "phone": "+12067899005",
+      "id": "tims-tavern-on-105th-seattle",
+      "distance": 8942.643718099998,
+      "price": "$",
+      "location": {
+        "address3": "",
+        "zip_code": "98133",
+        "address1": "602 N 105th St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "602 N 105th St",
+          "Seattle, WA 98133"
+        ]
+      },
+      "rating": 4.5,
+      "name": "Tim's Tavern on 105th",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/EDncoTBBVA4JV3vRvUg9QQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/tims-tavern-on-105th-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 789-9005",
+      "coordinates": {
+        "latitude": 47.7051635,
+        "longitude": -122.3509894
+      },
+      "categories": [
+        {
+          "alias": "bbq",
+          "title": "Barbeque"
+        },
+        {
+          "alias": "musicvenues",
+          "title": "Music Venues"
+        },
+        {
+          "alias": "divebars",
+          "title": "Dive Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 266,
+      "phone": "+12065837177",
+      "id": "rumba-seattle",
+      "distance": 1392.892299502,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98101",
+        "address1": "1112 Pike St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1112 Pike St",
+          "Seattle, WA 98101"
+        ]
+      },
+      "rating": 4,
+      "name": "Rumba",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/xJ8_1nZrx-eNZW_LFuIEng/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/rumba-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 583-7177",
+      "coordinates": {
+        "latitude": 47.6138199,
+        "longitude": -122.32858
+      },
+      "categories": [
+        {
+          "alias": "caribbean",
+          "title": "Caribbean"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 169,
+      "phone": "+12066026380",
+      "id": "shawn-o-donnells-american-grill-and-irish-pub-seattle-2",
+      "distance": 2620.86007954,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98104",
+        "address1": "508 2nd Ave",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "508 2nd Ave",
+          "Seattle, WA 98104"
+        ]
+      },
+      "rating": 4,
+      "name": "Shawn O'Donnell's American Grill & Irish Pub",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Rzpi7xwcDGZJ0dOTVP-vdQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/shawn-o-donnells-american-grill-and-irish-pub-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 602-6380",
+      "coordinates": {
+        "latitude": 47.6019782,
+        "longitude": -122.3318733
+      },
+      "categories": [
+        {
+          "alias": "fishnchips",
+          "title": "Fish & Chips"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "irish_pubs",
+          "title": "Irish Pub"
+        }
+      ]
+    },
+    {
+      "review_count": 97,
+      "phone": "+12063247611",
+      "id": "summit-public-house-seattle",
+      "distance": 760.9473865064,
+      "price": "$",
+      "location": {
+        "address3": "",
+        "zip_code": "98102",
+        "address1": "601 Summit Ave E",
+        "city": "Seattle",
+        "address2": "Ste 102",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "601 Summit Ave E",
+          "Ste 102",
+          "Seattle, WA 98102"
+        ]
+      },
+      "rating": 4,
+      "name": "Summit Public House",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/l3KQBJ8NleUy1m2VDWGcEw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/summit-public-house-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 324-7611",
+      "coordinates": {
+        "latitude": 47.6244017760816,
+        "longitude": -122.325471593869
+      },
+      "categories": [
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ]
+    },
+    {
+      "review_count": 119,
+      "phone": "+12062161254",
+      "id": "highliner-public-house-seattle",
+      "distance": 4734.52458803,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98119",
+        "address1": "3909 18th Ave W",
+        "city": "Seattle",
+        "address2": null,
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "3909 18th Ave W",
+          "Seattle, WA 98119"
+        ]
+      },
+      "rating": 4,
+      "name": "Highliner Public House",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HyJ1nRt9iGEZjIMsQSrHnQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/highliner-public-house-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 216-1254",
+      "coordinates": {
+        "latitude": 47.6554366,
+        "longitude": -122.3803277
+      },
+      "categories": [
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        },
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ]
+    },
+    {
+      "review_count": 687,
+      "phone": "+12063579000",
+      "id": "boka-restaurant-bar-seattle-3",
+      "distance": 2273.8089662859998,
+      "price": "$$",
+      "location": {
+        "address3": "Hotel 1000",
+        "zip_code": "98104",
+        "address1": "1010 1st Ave",
+        "city": "Seattle",
+        "address2": null,
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1010 1st Ave",
+          "Hotel 1000",
+          "Seattle, WA 98104"
+        ]
+      },
+      "rating": 3.5,
+      "name": "BOKA Restaurant + Bar",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jwj1-NW5Oj_i2wkqa2PcOw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/boka-restaurant-bar-seattle-3?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 357-9000",
+      "coordinates": {
+        "latitude": 47.60503,
+        "longitude": -122.33622
+      },
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 190,
+      "phone": "+12063229463",
+      "id": "poco-wine-spirits-seattle",
+      "distance": 1983.718832992,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98122",
+        "address1": "1408 E Pine St",
+        "city": "Seattle",
+        "address2": null,
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1408 E Pine St",
+          "Seattle, WA 98122"
+        ]
+      },
+      "rating": 4,
+      "name": "Poco Wine + Spirits",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PWHnGM6qGR9X6yCOdN2B8g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/poco-wine-spirits-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 322-9463",
+      "coordinates": {
+        "latitude": 47.61542,
+        "longitude": -122.31371
+      },
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 260,
+      "phone": "+12066827632",
+      "id": "row-house-cafe-seattle",
+      "distance": 286.781008386,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98109",
+        "address1": "1170 Republican St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1170 Republican St",
+          "Seattle, WA 98109"
+        ]
+      },
+      "rating": 3.5,
+      "name": "Row House Cafe",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8fEUGvWcNiemPC-BKbsbBw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/row-house-cafe-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 682-7632",
+      "coordinates": {
+        "latitude": 47.6232849,
+        "longitude": -122.3333676
+      },
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 44,
+      "phone": "+12064535067",
+      "id": "the-100-pound-clam-seattle-2",
+      "distance": 467.42556097,
+      "price": "$$",
+      "location": {
+        "address3": null,
+        "zip_code": "98109",
+        "address1": "1001 Fairview Ave N",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1001 Fairview Ave N",
+          "Seattle, WA 98109"
+        ]
+      },
+      "rating": 4,
+      "name": "The 100 Pound Clam",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NAaJ41xxPnK4DzvVlKHxog/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-100-pound-clam-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 453-5067",
+      "coordinates": {
+        "latitude": 47.62881,
+        "longitude": -122.33175
+      },
+      "categories": [
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ]
+    },
+    {
+      "review_count": 44,
+      "phone": "+12064417374",
+      "id": "retro-restaurant-and-lounge-seattle",
+      "distance": 1584.76698754,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98101",
+        "address1": "216 Stewart St",
+        "city": "Seattle",
+        "address2": null,
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "216 Stewart St",
+          "Seattle, WA 98101"
+        ]
+      },
+      "rating": 4,
+      "name": "Retro Restaurant & Lounge",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/gHpbuZk7i6Yc-JvuiMRoCA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/retro-restaurant-and-lounge-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 441-7374",
+      "coordinates": {
+        "latitude": 47.6115303,
+        "longitude": -122.3399963
+      },
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        }
+      ]
+    },
+    {
+      "review_count": 163,
+      "phone": "+12062840931",
+      "id": "tini-bigs-lounge-seattle-2",
+      "distance": 1656.6928982919999,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98109",
+        "address1": "100 Denny Way",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "100 Denny Way",
+          "Seattle, WA 98109"
+        ]
+      },
+      "rating": 3.5,
+      "name": "Tini Bigs Lounge",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IV5o61N28LFrRz4KytBozA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/tini-bigs-lounge-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 284-0931",
+      "coordinates": {
+        "latitude": 47.6187316542544,
+        "longitude": -122.355262594167
+      },
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ]
+    },
+    {
+      "review_count": 74,
+      "phone": "+12064202535",
+      "id": "taproot-cafe-and-bar-seattle-2",
+      "distance": 8456.47980684,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98118",
+        "address1": "4908 Rainier Ave S",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "4908 Rainier Ave S",
+          "Seattle, WA 98118"
+        ]
+      },
+      "rating": 4.5,
+      "name": "Taproot Cafe & Bar",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Vdz0H7JdKikXTrFvFUNGFw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/taproot-cafe-and-bar-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 420-2535",
+      "coordinates": {
+        "latitude": 47.5575523,
+        "longitude": -122.2846261
+      },
+      "categories": [
+        {
+          "alias": "juicebars",
+          "title": "Juice Bars & Smoothies"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 59,
+      "phone": "+12066026432",
+      "id": "cuadra-no-32-seattle",
+      "distance": 1597.7423878503998,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98121",
+        "address1": "2132 1st Ave",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "2132 1st Ave",
+          "Seattle, WA 98121"
+        ]
+      },
+      "rating": 4,
+      "name": "Cuadra No. 32",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/mBmax_1pVPxki_kYc3Qdbw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cuadra-no-32-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 602-6432",
+      "coordinates": {
+        "latitude": 47.612540007125,
+        "longitude": -122.344965619049
+      },
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        },
+        {
+          "alias": "mediterranean",
+          "title": "Mediterranean"
+        }
+      ]
+    },
+    {
+      "review_count": 112,
+      "phone": "+12066220209",
+      "id": "the-central-saloon-seattle",
+      "distance": 2762.31865153,
+      "price": "$",
+      "location": {
+        "address3": "",
+        "zip_code": "98104",
+        "address1": "207 1st Ave S",
+        "city": "Seattle",
+        "address2": null,
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "207 1st Ave S",
+          "Seattle, WA 98104"
+        ]
+      },
+      "rating": 3.5,
+      "name": "The Central Saloon",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_Bc47WBlJi0guUKWPYcxbw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-central-saloon-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 622-0209",
+      "coordinates": {
+        "latitude": 47.6005872,
+        "longitude": -122.3345892
+      },
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "musicvenues",
+          "title": "Music Venues"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ]
+    },
+    {
+      "review_count": 331,
+      "phone": "+12064486210",
+      "id": "belltown-pub-seattle-2",
+      "distance": 1550.0773419719999,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98121",
+        "address1": "2322 1st Ave",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "2322 1st Ave",
+          "Seattle, WA 98121"
+        ]
+      },
+      "rating": 3.5,
+      "name": "Belltown Pub",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3Jy7O4KzHuNkQxLf3Phjvw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/belltown-pub-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 448-6210",
+      "coordinates": {
+        "latitude": 47.613890129057,
+        "longitude": -122.34713646886
+      },
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        }
+      ]
+    },
+    {
+      "review_count": 50,
+      "phone": "+12067829690",
+      "id": "lamplighter-public-house-seattle-2",
+      "distance": 7650.111309403999,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98117",
+        "address1": "820 NW 85th St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "820 NW 85th St",
+          "Seattle, WA 98117"
+        ]
+      },
+      "rating": 4,
+      "name": "Lamplighter Public House",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fRqGwL7GkKfotwSWXbcPsA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/lamplighter-public-house-seattle-2?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 782-9690",
+      "coordinates": {
+        "latitude": 47.6908798,
+        "longitude": -122.3669891
+      },
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ]
+    },
+    {
+      "review_count": 214,
+      "phone": "+12067297433",
+      "id": "the-watershed-pub-and-kitchen-seattle",
+      "distance": 8553.860970239999,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98125",
+        "address1": "10104 3rd Ave NE",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "10104 3rd Ave NE",
+          "Seattle, WA 98125"
+        ]
+      },
+      "rating": 3.5,
+      "name": "The Watershed Pub and Kitchen",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/lKpcs5KwClTWQSPT846edA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-watershed-pub-and-kitchen-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 729-7433",
+      "coordinates": {
+        "latitude": 47.702051,
+        "longitude": -122.325515
+      },
+      "categories": [
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ]
+    },
+    {
+      "review_count": 195,
+      "phone": "+12067834805",
+      "id": "the-leary-traveler-seattle",
+      "distance": 4479.9078488840005,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98107",
+        "address1": "4354 Leary Way NW",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "4354 Leary Way NW",
+          "Seattle, WA 98107"
+        ]
+      },
+      "rating": 4,
+      "name": "The Leary Traveler",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v3RJlUbmrRRrhpFKn97LZQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-leary-traveler-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 783-4805",
+      "coordinates": {
+        "latitude": 47.66023,
+        "longitude": -122.36568
+      },
+      "categories": [
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ]
+    },
+    {
+      "review_count": 81,
+      "phone": "+12066819443",
+      "id": "hurry-curry-of-tokyo-seattle",
+      "distance": 511.84929952799996,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98109",
+        "address1": "825 Harrison St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "825 Harrison St",
+          "Seattle, WA 98109"
+        ]
+      },
+      "rating": 3.5,
+      "name": "Hurry Curry of Tokyo",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/AnRajFU-Vm5FICQpPd2Nsw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/hurry-curry-of-tokyo-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 681-9443",
+      "coordinates": {
+        "latitude": 47.6219431458895,
+        "longitude": -122.339986880425
+      },
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "comfortfood",
+          "title": "Comfort Food"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ]
+    },
+    {
+      "review_count": 162,
+      "phone": "+12066342110",
+      "id": "murphys-pub-seattle",
+      "distance": 4025.9925362799995,
+      "price": "$$",
+      "location": {
+        "address3": "",
+        "zip_code": "98103",
+        "address1": "1928 N 45th St",
+        "city": "Seattle",
+        "address2": "",
+        "country": "US",
+        "state": "WA",
+        "display_address": [
+          "1928 N 45th St",
+          "Seattle, WA 98103"
+        ]
+      },
+      "rating": 3.5,
+      "name": "Murphy's Pub",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NZiWfkgbPhE8SKNG37wUGQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/murphys-pub-seattle?adjust_creative=NeNLStDTgy3U-Z7Sn60GiA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=NeNLStDTgy3U-Z7Sn60GiA",
+      "display_phone": "(206) 634-2110",
+      "coordinates": {
+        "latitude": 47.661611,
+        "longitude": -122.333934
+      },
+      "categories": [
+        {
+          "alias": "irish",
+          "title": "Irish"
+        },
+        {
+          "alias": "irish_pubs",
+          "title": "Irish Pub"
+        }
+      ]
+    }
+  ],
+  "total": 548
+}

@@ -1,29 +1,27 @@
 'use strict';
 
-var Yelp = require('yelp');
-var express = require('express'),
-  path = require('path'),
+require('dotenv').load();
 
-  port = process.env.PORT || 3000,
-  app = express();
+var express = require('express');
+var path = require('path');
+var requestProxy = require('express-request-proxy');
+var app = express();
 
-var yelp = new Yelp({
-  consumer_key: process.env.CONSUMER_KEY,
-  consumer_secret: process.env.CONSUMER_SECRET,
-  token: process.env.TOKEN,
+app.get('/yelp/*', function(req, res){
+  console.log('req.params', req.params);
+  console.log('req.query', req.query);
+
+  requestProxy({
+    url: 'http://api.yelp.com/' + req.params[0],
+    headers: {
+      Authorization: 'Bearer ' + process.env.YELP_TOKEN,
+    },
+    query: req.query,
+  })(req, res);
 });
 
 app.use(express.static('./'));
 
-app.get('/api', function(request, response) {
-  var params = {categories: 'bars', term: 'dogs allowed', location: 'Seattle'};
-  if(request.query.location) {
-    params.location = request.query.location;
-
-    yelp.search(params)
-    .then(function (data) {
-      response.json(data);
-      console.log('Holy shiittttt, it workssss');
-    });
-  }
+app.listen(process.env.PORT, function(){
+  console.log('server up ::', process.env.PORT);
 });
