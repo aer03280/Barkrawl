@@ -4,36 +4,65 @@
 
   Bar.allBars = [];
 
-//I have a feeling we need to refactor this still -nikko
-  function Business(opts){
-    Object.keys(opts).forEach(function(element,index){
-      // this[element] = opts[element];
-      this.name = opts[index].name;
-      this.latitude =  opts[index].coordinates.latitude;
-      this.longitude = opts[index].coordinates.longitude;
-      this.address = opts[index].location.display_address;
-      this.phone = opts[index].display_phone;
-      this.image = opts[index].image_url;
-      this.price = opts[index].price;
-      this.rating = opts[index].rating;
-      this.currentlyOpen = opts[index].is_closed;
-    },this);
+  function RenderBusinesses(opts){
+    this.name = opts.name;
+    console.log(this.name);
+    this.latitude = opts.coordinates.latitude;
+    this.longitude = opts.coordinates.longitude;
+    // note: address is an array of 3 items
+    this.address = opts.location.display_address;
+    this.phone = opts.display_phone;
+    this.image = opts.image_url;
+    this.price = opts.price;
+    this.rating = opts.rating;
+    this.closed = opts.is_closed;
+    Bar.allBars.push(this);
   }
+  RenderBusinesses.createTable = function(){
+    // Bar.requestData();
+    webDB.execute(
+    'CREATE TABLE IF NOT EXISTS bars_database (' +
+      'id INTEGER PRIMARY KEY, ' +
+      'name VARCHAR NOT NULL, ' +
+      'latitude FLOAT NOT NULL, ' +
+      'longitude FLOAT NOT NULL, ' +
+      'address VARCHAR NOT NULL, ' +
+      'phone VARCHAR NOT NULL, ' +
+      'image VARCHAR NOT NULL, ' +
+      'price VARCHAR NOT NULL, ' +
+      'rating FLOAT NOT NULL, ' +
+      'closed BOOLEAN);',
+      function(){
+        console.log('table render successful');
+        Bar.requestData();
+      }
+  );
+  };
+
+  RenderBusinesses.prototype.insertRecord = function(){
+    webDB.execute(
+      [
+        {
+          'sql': 'INSERT INTO bars_database (name, latitude, longitude, address, phone, image, price, rating, closed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);',
+          'data': [this.name, this.latitude, this.longitude, this.address, this.phone, this.image, this.price, this.rating, this.closed]
+        }
+      ]
+    );
+  };
 
   Bar.requestData = function(){
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location=98103&limit=50&sort_by=distance',
       success: function(data) {
-        data.businesses.forEach(function(bar){
-          var current_bar = new Business(bar);
-          Bar.allBars.push(current_bar);
-
+        data.businesses.forEach(function(item){
+          var sqlTable = new RenderBusinesses(item);
+          sqlTable.insertRecord();
         });
         console.table(Bar.allBars);
-
       }
     });
   };
+  RenderBusinesses.createTable();
   module.Bar = Bar;
 })(window);
