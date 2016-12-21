@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <title>Barkrawl</title>
+<!-- bar form -->
+<script id="bar-template"  type="text/x-handlebars-template">
+  <div class="back-row-container"><a href="/" class="back-button">Edit Search</a></div>
+    <div class="row-container">
+      <div class="barText">
+        <h2>{{name}}</h2>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <!-- maybe img?? -->
+        <p>{{price}}</p>
+        <p>{{rating}}</p>
+        <p>{{closed}}</p>
+        <a class="btn-direction">&nbsp;&nbsp;Get Driving Directions</a>
+        <a class="btn-googlemap" href="https://www.google.com/maps/dir//{{longitude}},{{latitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a>
+      <div class="bar-map"></div>
+    </div>
+</script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
@@ -41,33 +58,38 @@
       </form>
     </section>
 
-
     <section id="map-view" class="tab-content">
       <div id="map"></div>
+      <a href="/bar/crosswalk-seattle">DevLink</a>
     </section>
     <section id="about-view" class ="tab-content">
+      <h1> about view beans</h1>
+    </section>
+    <section id="bar-view" class="tab-content">
+      <h1> bar view hahahah </h1>
     </section>
                         <!-- Data/Tokens -->
-    <script src="token.js"></script>
+    <script src="/token.js"></script>
                         <!-- Vendors -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqHl1ZOIk0ob_jQZUPnaE4UVgd-UIo910"></script>
-    <script src="vendor/page.js"></script>
-    <script src="vendor/html5sql.js"></script>
-    <script src="vendor/webDB.js"></script>
+    <script src="/vendor/page.js"></script>
+    <script src="/vendor/html5sql.js"></script>
+    <script src="/vendor/webDB.js"></script>
                         <!-- Models -->
-    <script src="scripts/model/bar.js"></script>
-    <script src="scripts/model/map.js"></script>
+    <script src="/scripts/model/bar.js"></script>
+    <script src="/scripts/model/map.js"></script>
                         <!-- View -->
-    <script src="scripts/view/aboutView.js"></script>
+    <script src="/scripts/view/aboutView.js"></script>
     <!-- <script src="view/mapView.js"></script> -->
                         <!-- Controllers -->
-    <script src="scripts/controllers/app.js" charset="utf-8"></script>
-    <script src="scripts/controllers/aboutController.js"></script>
-    <script src="scripts/controllers/mapController.js"></script>
-    <script src="scripts/controllers/routes.js"></script>
+    <script src="/scripts/controllers/barController.js"></script>
+    <script src="/scripts/controllers/aboutController.js"></script>
+    <script src="/scripts/controllers/mapController.js"></script>
+    <script src="/scripts/controllers/routes.js"></script>
+
 
   </body>
 </html>
