@@ -32,7 +32,8 @@
       'closed BOOLEAN);',
       function(){
         console.log('table render successful');
-        Bar.requestData();
+        mapView.setLocation();
+        // Bar.requestData();
       }
   );
   };

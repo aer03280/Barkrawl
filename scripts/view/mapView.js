@@ -1,7 +1,7 @@
 'use strict';
 (function(module){
   var mapView = {};
-  var mapView.userLocation = '';
+  mapView.userLocation = '';
 
   mapView.toHtml = function(){
     var template = Handlebars.compile();
@@ -32,14 +32,28 @@
 
   };
 
-  $('#user-submit-btn').on('click', function(){
-     mapView.userLocation = document.getElementById('user-location').value;
-    if (userLocation === ''){
-      sweetAlert('Sorry, that is not a valid entry');
-    } else {
-      mapView.setMarkers();
-    }
-  });
+  mapView.configQuery = function(val){
+    val.split(',').join('');
+    val.split(' ').join('');
+    return val;
+  };
+  mapView.setLocation = function(){
+    $('#user-submit-btn').on('click', function(){
+      // mapView.userLocation = 'PortlandOR';
+      Bar.requestData();
+      // mapView.userLocation
+      var ourLocation = document.getElementById('user-location').value;
+
+      mapView.userLocation = mapView.configQuery(ourLocation);
+      console.log('mapView.userLocation',mapView.userLocation);
+      if (mapView.userLocation === ''){
+        sweetAlert('Sorry, that is not a valid entry');
+      } else {
+        mapView.setMarkers();
+      }
+    });
+  }
+
 
   module.mapView = mapView;
 })(window);
