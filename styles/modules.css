@@ -29,3 +29,8 @@
 #user-form #user-submit-btn {
   margin-left: -4%;
 }
+
+#about-view {
+  position: relative;
+  top:20%;
+}

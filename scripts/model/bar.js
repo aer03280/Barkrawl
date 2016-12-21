@@ -53,7 +53,7 @@
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
       + mapView.userLocation
-      + '&limit=50&sort_by=distance',
+      + '&limit=10&sort_by=distance',
       success: function(data) {
         data.businesses.forEach(function(item){
           var allBusinesses = new Business(item);
