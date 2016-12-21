@@ -1,0 +1,20 @@
+
+#user-form-container {
+  position:absolute;
+  top:30%;
+  left:0;
+  right:0;
+  margin: 0 1em;
+  z-index:2;
+  padding: 1em 2em 3em 2em;
+  background-color: grey;
+}
+
+#user-form #user-location {
+  width:100%;
+  z-index:3;
+}
+
+.container-fluid {
+  border: solid 2px orange;
+}
