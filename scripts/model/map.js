@@ -15,15 +15,12 @@
 
   var myLatLng = {lat: 47.7051, lng: -122.3509};
   var mapDiv = document.getElementById('map');
-  var mapObj = new google.maps.Map(mapDiv, mapOptions);
+  map.mapObj = new google.maps.Map(mapDiv, mapOptions);
 
-  //This function will autocomplete any input the user makes.
-  //We can use this once our form is completed.
-
-  // google.maps.event.addDomListener(window, 'load', function() {
-  //   var input = document.getElementById(['*form-id*']);
-  //   map.autocomplete = new google.maps.places.Autocomplete(input);
-  // });
+  google.maps.event.addDomListener(window, 'load', function() {
+    var input = document.getElementById('user-location');
+    map.autocomplete = new google.maps.places.Autocomplete(input);
+  });
 
   module.map = map;
 })(window);
