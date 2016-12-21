@@ -2,6 +2,10 @@
 (function(module){
   mapView = {};
 
+  mapView.toHtml(){
+    var template = Handlebars.compile();
+    return template;
+  }
   mapView.renderIndexPage(){
 
   }
