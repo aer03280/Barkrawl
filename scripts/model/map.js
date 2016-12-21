@@ -13,14 +13,28 @@
   };
 
   var myLatLng = {lat: 47.7051, lng: -122.3509};
-  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  var mapDiv = document.getElementById('map');
+  var map = new google.maps.Map(mapDiv, mapOptions);
 
 //Left this in a semi-working condition. Currently no markers are being generated. We were attempting to iterate over the Bar.allBars array and instantiate a specific marker for each one. **Note** We've currently set up the Lat/Lng values in reverse order like Crystal had mentioned.
-  Bar.allBars.forEach(function(bar) {
-    new google.maps.Marker({
-      position: {lat: bar.longitude, lng: bar.latitude},
-      map: map,
-      title: bar.name
+  // Bar.allBars.forEach(function(bar) {
+  //   new google.maps.Marker({
+  //     position: {lat: bar.longitude, lng: bar.latitude},
+  //     map: map,
+  //     title: bar.name
+  //   });
+  // });
+
+  Bar.allBars.forEach(function(bar){
+    var coordinates = {
+      lat: bar.latitude,
+      lng: bar.longitude,
+    };
+    console.log(bar);
+    var marker = new google.maps.Marker({
+      position: coordinates,
+      map: map
     });
+    console.log(marker);
   });
 })(window);
