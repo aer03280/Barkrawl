@@ -17,31 +17,13 @@
   var mapDiv = document.getElementById('map');
   var mapObj = new google.maps.Map(mapDiv, mapOptions);
 
-//Left this in a semi-working condition. Currently no markers are being generated. We were attempting to iterate over the Bar.allBars array and instantiate a specific marker for each one. **Note** We've currently set up the Lat/Lng values in reverse order like Crystal had mentioned.
-  // Bar.allBars.forEach(function(bar) {
-  //   new google.maps.Marker({
-  //     position: {lat: bar.longitude, lng: bar.latitude},
-  //     map: map,
-  //     title: bar.name
-  //   });
+  //This function will autocomplete any input the user makes.
+  //We can use this once our form is completed.
+
+  // google.maps.event.addDomListener(window, 'load', function() {
+  //   var input = document.getElementById(['*form-id*']);
+  //   map.autocomplete = new google.maps.places.Autocomplete(input);
   // });
 
-  //Currently our call-order isn't operating properly, we can use this code later to iterate over whichever array and create markers (perhaps a currentBars array?) If setMarkers is called *after* our callstack is completed, it will render the markers properly.
-  map.setMarkers = function() {
-    Bar.allBars.forEach(function(bar){
-      var coordinates = {
-        lat: bar.latitude,
-        lng: bar.longitude,
-      };
-      console.log(bar);
-      var marker = new google.maps.Marker({
-        position: coordinates,
-        animation: google.maps.Animation.DROP,
-        icon:'/../../img/paw-icon.png',
-        map: mapObj
-      });
-      console.log(marker);
-    });
-  };
   module.map = map;
 })(window);
