@@ -50,7 +50,6 @@
     );
   };
 
-
   Bar.requestData = function(callback){
     Bar.allBars = [];
     $.ajax({
@@ -63,21 +62,13 @@
           var curBar = new BarObj(item);
           curBar.insertRecord();
         });
-        console.table(Bar.allBars);
-        // mapView.deleteAllMarkers();
         mapView.setMarkers();
-          if (callback) {
+        if (callback) {
           callback(Bar.allBars);
         }
       }
     });
   };
   Bar.createTable();
-  
-
-        // console.table(Bar.allBars);
-   
-  // Business.createTable();
-
   module.Bar = Bar;
 })(window);
