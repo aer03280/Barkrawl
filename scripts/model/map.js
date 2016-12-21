@@ -1,5 +1,6 @@
 'use strict';
 (function(module){
+  var map = {};
 
   var mapOptions = {
     zoom: 12,
@@ -14,7 +15,7 @@
 
   var myLatLng = {lat: 47.7051, lng: -122.3509};
   var mapDiv = document.getElementById('map');
-  var map = new google.maps.Map(mapDiv, mapOptions);
+  var mapObj = new google.maps.Map(mapDiv, mapOptions);
 
 //Left this in a semi-working condition. Currently no markers are being generated. We were attempting to iterate over the Bar.allBars array and instantiate a specific marker for each one. **Note** We've currently set up the Lat/Lng values in reverse order like Crystal had mentioned.
   // Bar.allBars.forEach(function(bar) {
@@ -25,16 +26,22 @@
   //   });
   // });
 
-  Bar.allBars.forEach(function(bar){
-    var coordinates = {
-      lat: bar.latitude,
-      lng: bar.longitude,
-    };
-    console.log(bar);
-    var marker = new google.maps.Marker({
-      position: coordinates,
-      map: map
+  //Currently our call-order isn't operating properly, we can use this code later to iterate over whichever array and create markers (perhaps a currentBars array?) If setMarkers is called *after* our callstack is completed, it will render the markers properly.
+  map.setMarkers = function() {
+    Bar.allBars.forEach(function(bar){
+      var coordinates = {
+        lat: bar.latitude,
+        lng: bar.longitude,
+      };
+      console.log(bar);
+      var marker = new google.maps.Marker({
+        position: coordinates,
+        animation: google.maps.Animation.DROP,
+        icon:'/../../img/paw-icon.png',
+        map: mapObj
+      });
+      console.log(marker);
     });
-    console.log(marker);
-  });
+  };
+  module.map = map;
 })(window);
