@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <title>Barkrawl</title>
+<!-- bar form -->
+<script id="bar-template"  type="text/x-handlebars-template">
+  <div class="back-row-container"><a href="/" class="back-button">Edit Search</a></div>
+    <div class="row-container">
+      <div class="barText">
+        <h2>{{name}}</h2>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <!-- maybe img?? -->
+        <p>{{price}}</p>
+        <p>{{rating}}</p>
+        <p>{{closed}}</p>
+        <a class="btn-direction">&nbsp;&nbsp;Get Driving Directions</a>
+        <a class="btn-googlemap" href="https://www.google.com/maps/dir//{{longitude}},{{latitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a>
+      <div class="barMap"></div>
+    </div>
+</script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
