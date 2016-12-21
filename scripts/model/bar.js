@@ -4,7 +4,7 @@
 
   Bar.allBars = [];
 
-  function Business(opts){
+  function BarObj(opts){
     this.name = opts.name;
     this.latitude = opts.coordinates.latitude;
     this.longitude = opts.coordinates.longitude;
@@ -17,7 +17,7 @@
     this.closed = opts.is_closed;
     Bar.allBars.push(this);
   }
-  Business.createTable = function(){
+  Bar.createTable = function(){
     webDB.execute(
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
@@ -38,7 +38,7 @@
   );
   };
 
-  Business.prototype.insertRecord = function(){
+  BarObj.prototype.insertRecord = function(){
     webDB.execute(
       [
         {
@@ -50,6 +50,7 @@
   };
 
   Bar.requestData = function(){
+    Bar.allBars = [];
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
@@ -57,13 +58,15 @@
       + '&limit=10&sort_by=distance',
       success: function(data) {
         data.businesses.forEach(function(item){
-          var allBusinesses = new Business(item);
-          allBusinesses.insertRecord();
+          var curBar = new BarObj(item);
+          curBar.insertRecord();
         });
         console.table(Bar.allBars);
+        // mapView.deleteAllMarkers();
+        mapView.setMarkers();
       }
     });
   };
-  Business.createTable();
+  Bar.createTable();
   module.Bar = Bar;
 })(window);

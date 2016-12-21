@@ -7,10 +7,7 @@
     var template = Handlebars.compile();
     return template;
   };
-  // mapView.renderIndexPage(){
-  //
-  // }
-  //Currently this is iterating over all bars (50), we can refactor to choose just the 10 nearest.
+
   mapView.setMarkers = function() {
     Bar.allBars.forEach(function(bar){
       var coordinates = {
@@ -26,9 +23,9 @@
     });
   };
 
-  mapView.deleteMarkers = function() {
-
-  };
+  // mapView.deleteAllMarkers = function() {
+  //   setMapOnAll(null);
+  // };
 
   var configQuery = function(val){
     var newVal1 = val.split(' ').join('');
@@ -38,13 +35,14 @@
 
   mapView.setLocation = function(){
     $('#user-submit-btn').on('click', function(){
-      Bar.requestData();
       var inputLocation = document.getElementById('user-location').value;
       mapView.userLocation = configQuery(inputLocation);
       if (mapView.userLocation === ''){
         sweetAlert('Sorry, that is not a valid entry');
       } else {
-        mapView.setMarkers();
+        Bar.requestData();
+
+        //moved mapView.setMarkers() to happen in proper call order
       }
     });
   };

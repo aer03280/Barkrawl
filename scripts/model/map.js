@@ -17,9 +17,6 @@
   var mapDiv = document.getElementById('map');
   map.mapObj = new google.maps.Map(mapDiv, mapOptions);
 
-  //This function will autocomplete any input the user makes.
-  //We can use this once our form is completed.
-
   google.maps.event.addDomListener(window, 'load', function() {
     var input = document.getElementById('user-location');
     map.autocomplete = new google.maps.places.Autocomplete(input);
