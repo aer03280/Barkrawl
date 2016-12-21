@@ -6,6 +6,7 @@
 
   function BarObj(opts){
     this.name = opts.name;
+    this.barID = opts.id;
     this.latitude = opts.coordinates.latitude;
     this.longitude = opts.coordinates.longitude;
     // note: address is an array of 3 items
@@ -49,7 +50,7 @@
     );
   };
 
-  Bar.requestData = function(){
+  Bar.requestData = function(callback){
     Bar.allBars = [];
     $.ajax({
       type: 'GET',
@@ -61,9 +62,10 @@
           var curBar = new BarObj(item);
           curBar.insertRecord();
         });
-        console.table(Bar.allBars);
-        // mapView.deleteAllMarkers();
         mapView.setMarkers();
+        if (callback) {
+          callback(Bar.allBars);
+        }
       }
     });
   };
