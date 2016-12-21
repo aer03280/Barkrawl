@@ -33,40 +33,30 @@
     </nav>
     <section id="map-view" class="tab-content">
       <div id="map"></div>
-      <script>
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 47.6062, lng: -122.3321},
-        zoom: 8
-      });
-    }
-      </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqHl1ZOIk0ob_jQZUPnaE4UVgd-UIo910&callback=initMap"></script>
     </section>
     <section id="about-view" class ="tab-content">
-      <h1>Hello!</h1>
     </section>
                         <!-- Data/Tokens -->
-    <!-- <script src="data/bars.json"></script>                     -->
     <script src="token.js"></script>
                         <!-- Vendors -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqHl1ZOIk0ob_jQZUPnaE4UVgd-UIo910"></script>
     <script src="vendor/page.js"></script>
     <script src="vendor/html5sql.js"></script>
     <script src="vendor/webDB.js"></script>
                         <!-- Models -->
     <script src="scripts/model/bar.js"></script>
+    <script src="scripts/model/map.js"></script>
                         <!-- View -->
-    <script src="view/aboutView.js"></script>
+    <script src="scripts/view/aboutView.js"></script>
     <!-- <script src="view/mapView.js"></script> -->
                         <!-- Controllers -->
     <script src="scripts/controllers/app.js" charset="utf-8"></script>
     <script src="scripts/controllers/aboutController.js"></script>
     <script src="scripts/controllers/mapController.js"></script>
     <script src="scripts/controllers/routes.js"></script>
-    <script src="scripts/model/map.js" charset="utf-8"></script>
 
   </body>
 </html>
