@@ -12,7 +12,7 @@
     <title>Barkrawl</title>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-bootstrap-collapse">
@@ -27,17 +27,19 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active" data-content="map-view"><a href="/">Home<span class="sr-only">(current)</span></a></li>
             <li data-content="about-view"><a href="/about">About</a></li>
-            <li><a href="/suggestions">Suggestions</a></li>
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
+    <section id="user-form-container" class="container">
       <form class="form-inline" id="user-form">
-        <div class="form-group" id="user-form-container">
-          <input type="text" class=form-control id="user-location" placeholder="Enter address or zipcode">
+        <div class="form-group" id="user-location-container">
+          <label for="inputLocation" id="user-location-label">Enter Your Location:</label>
+          <input type="text" class=form-control id="user-location" placeholder="Address or Zipcode">
+          <button type="submit" class="btn btn-primary" id="user-submit-btn">Lets Go!</button>
         </div>
-          <button type="submit" class="btn btn-primary" id="user-submit-btn">Submit</button>
       </form>
+    </section>
 
 
     <section id="map-view" class="tab-content">
