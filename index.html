@@ -3,11 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/base.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/modules.css">
     <title>Barkrawl</title>
   </head>
   <body>
@@ -26,11 +27,21 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active" data-content="map-view"><a href="/">Home<span class="sr-only">(current)</span></a></li>
             <li data-content="about-view"><a href="/about">About</a></li>
-            <li><a href="/suggestions">Suggestions</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
+    <section id="user-form-container" class="container">
+      <form class="form-inline" id="user-form">
+        <div class="form-group" id="user-location-container">
+          <label for="inputLocation" id="user-location-label">Enter Your Location:</label>
+          <input type="text" class=form-control id="user-location" placeholder="Address or Zipcode">
+          <button type="submit" class="btn btn-primary" id="user-submit-btn">Lets Go!</button>
+        </div>
+      </form>
+    </section>
+
+
     <section id="map-view" class="tab-content">
       <div id="map"></div>
     </section>
