@@ -6,6 +6,7 @@
 
   function Business(opts){
     this.name = opts.name;
+    this.barID = opts.id;
     this.latitude = opts.coordinates.latitude;
     this.longitude = opts.coordinates.longitude;
     // note: address is an array of 3 items
@@ -48,19 +49,23 @@
     );
   };
 
-  Bar.requestData = function(){
+  Bar.requestData = function(callback){
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location=98103&limit=50&sort_by=distance',
       success: function(data) {
         data.businesses.forEach(function(item){
-          var allBusinesses = new Business(item);
-          allBusinesses.insertRecord();
+          var biz = new Business(item);
+          biz.insertRecord();
         });
-        console.table(Bar.allBars);
+        
+        if (callback) {
+          callback(Bar.allBars);
+        }
+        // console.table(Bar.allBars);
       }
     });
   };
-  Business.createTable();
+  // Business.createTable();
   module.Bar = Bar;
 })(window);
