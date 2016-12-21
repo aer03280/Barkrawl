@@ -4,9 +4,8 @@
 
   Bar.allBars = [];
 
-  function RenderBusinesses(opts){
+  function BarObj(opts){
     this.name = opts.name;
-    console.log(this.name);
     this.latitude = opts.coordinates.latitude;
     this.longitude = opts.coordinates.longitude;
     // note: address is an array of 3 items
@@ -18,8 +17,7 @@
     this.closed = opts.is_closed;
     Bar.allBars.push(this);
   }
-  RenderBusinesses.createTable = function(){
-    // Bar.requestData();
+  Bar.createTable = function(){
     webDB.execute(
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
@@ -34,12 +32,13 @@
       'closed BOOLEAN);',
       function(){
         console.log('table render successful');
-        Bar.requestData();
+        mapView.setLocation();
+        // Bar.requestData();
       }
   );
   };
 
-  RenderBusinesses.prototype.insertRecord = function(){
+  BarObj.prototype.insertRecord = function(){
     webDB.execute(
       [
         {
@@ -51,18 +50,23 @@
   };
 
   Bar.requestData = function(){
+    Bar.allBars = [];
     $.ajax({
       type: 'GET',
-      url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location=98103&limit=50&sort_by=distance',
+      url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
+      + mapView.userLocation
+      + '&limit=10&sort_by=distance',
       success: function(data) {
         data.businesses.forEach(function(item){
-          var sqlTable = new RenderBusinesses(item);
-          sqlTable.insertRecord();
+          var curBar = new BarObj(item);
+          curBar.insertRecord();
         });
         console.table(Bar.allBars);
+        // mapView.deleteAllMarkers();
+        mapView.setMarkers();
       }
     });
   };
-  RenderBusinesses.createTable();
+  Bar.createTable();
   module.Bar = Bar;
 })(window);

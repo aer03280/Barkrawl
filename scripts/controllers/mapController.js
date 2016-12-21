@@ -4,6 +4,7 @@
   mapController.reveal = function() {
     $('#about-view').hide();
     $('#map-view').show();
+    $('#user-form-container').show();
   };
   module.mapController = mapController;
 

@@ -4,6 +4,7 @@
   aboutController.reveal = function() {
     $('#about-view').show();
     $('#map-view').hide();
+    $('#user-form-container').hide();
     console.log('This is a meaningful message');
   };
   module.aboutController = aboutController;
