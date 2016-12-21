@@ -17,14 +17,12 @@
         lat: bar.latitude,
         lng: bar.longitude,
       };
-      // console.log(bar);
       var marker = new google.maps.Marker({
         position: coordinates,
         animation: google.maps.Animation.DROP,
         icon:'/../../img/paw-icon.png',
         map: map.mapObj
       });
-      // console.log(marker);
     });
   };
 
@@ -32,28 +30,24 @@
 
   };
 
-  mapView.configQuery = function(val){
-    val.split(',').join('');
-    val.split(' ').join('');
-    return val;
+  var configQuery = function(val){
+    var newVal1 = val.split(' ').join('');
+    var newVal2 = newVal1.split(',').join('');
+    return newVal2;
   };
+
   mapView.setLocation = function(){
     $('#user-submit-btn').on('click', function(){
-      // mapView.userLocation = 'PortlandOR';
       Bar.requestData();
-      // mapView.userLocation
-      var ourLocation = document.getElementById('user-location').value;
-
-      mapView.userLocation = mapView.configQuery(ourLocation);
-      console.log('mapView.userLocation',mapView.userLocation);
+      var inputLocation = document.getElementById('user-location').value;
+      mapView.userLocation = configQuery(inputLocation);
       if (mapView.userLocation === ''){
         sweetAlert('Sorry, that is not a valid entry');
       } else {
         mapView.setMarkers();
       }
     });
-  }
-
+  };
 
   module.mapView = mapView;
 })(window);
