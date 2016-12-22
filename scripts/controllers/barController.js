@@ -4,27 +4,29 @@
   barController.reveal = function(ctx, next){
     // ctx.params.id // you want this to be your barID;
     $('#about-view').hide();
-    $('#bar-view').show();
     $('#map-view').hide();
     $('#user-form-container').hide();
-    // Bar.allBars
-    Bar.requestData(function(allBars){
-      console.log('Booya! Allbars!', allBars);
-      var selectedBar;
-      for (var i = 0; i < allBars.length; i++) {
-        if (allBars[i].barID == ctx.params.id) {
-          selectedBar = allBars[i];
-        }
+    $('#bar-view').show();
+
+    webDB.execute(
+    'SELECT * FROM bars_database WHERE id=' + ctx.params.id,
+      function(result){
+        console.log(arguments);
+        var selectedBar = result[0];
+        console.log('Found the Bar.', selectedBar);
+        var source   = $('#bar-template').html();
+        var template = Handlebars.compile(source);
+        var html = template(selectedBar);
+        console.log('html',html);
+        $('#bar-view').html(html);
       }
-      console.log('Found the Bar.', selectedBar);
-      var source   = $('#bar-template').html();
-      var template = Handlebars.compile(source);
-      var html = template(selectedBar);
-      $('#bar-view').html(html);
-    });
-    console.log('Bar.allBars:', allBars);
-    next();
+  );
   };
 
+
+  //   console.log('Bar.allBars:', allBars);
+  //   next();
+  // };
+
   module.barController = barController;
-}) (window);
+})(window);
