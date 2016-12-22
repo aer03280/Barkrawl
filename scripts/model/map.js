@@ -2,9 +2,9 @@
 (function(module){
   var map = {};
 
-  var mapOptions = {
+  map.mapOptions = {
     zoom: 12,
-    center: new google.maps.LatLng(47.705, -122.350),
+    center: new google.maps.LatLng(47.6062, -122.3321),
     mapTypeId: google.maps.MapTypeId.STREET,
     scrollwheel: false,
     zoomControl: true,
@@ -15,7 +15,7 @@
 
   var myLatLng = {lat: 47.7051, lng: -122.3509};
   var mapDiv = document.getElementById('map');
-  map.mapObj = new google.maps.Map(mapDiv, mapOptions);
+  map.mapObj = new google.maps.Map(mapDiv, map.mapOptions);
 
   google.maps.event.addDomListener(window, 'load', function() {
     var input = document.getElementById('user-location');

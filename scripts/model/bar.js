@@ -23,6 +23,7 @@
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
       'name VARCHAR NOT NULL, ' +
+      // 'barID VARCHAR NOT NULL' +
       'latitude FLOAT NOT NULL, ' +
       'longitude FLOAT NOT NULL, ' +
       'address VARCHAR NOT NULL, ' +
@@ -49,8 +50,14 @@
     );
   };
 
+  Bar.dropTable = function(){
+    webDB.execute('DROP TABLE bars_database', Bar.createTable);
+  };
   Bar.requestData = function(callback){
     Bar.allBars = [];
+    console.log('Bar.allBars', Bar.allBars);
+
+    Bar.dropTable();
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
@@ -63,8 +70,11 @@
         });
         mapView.setMarkers();
         if (callback) {
-          callback(Bar.allBars);
+          callback();
         }
+      },
+      error: function(jqXHR) {
+        sweetAlert('Oops! Street addresses work best, try a different search!');
       }
     });
   };
