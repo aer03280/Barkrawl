@@ -20,9 +20,15 @@
         position: coordinates,
         animation: google.maps.Animation.DROP,
         icon:'/../../img/paw-icon.png',
-        map: map.mapObj
+        map: map.mapObj,
+        id: bar.barID
       });
       mapView.markers.push(marker);
+      marker.addListener('click', function() {
+        mapView.userChoice = new google.maps.LatLng(bar.latitude, bar.longitude);
+        mapView.selectedMarker = this;
+        page('/bar/' + bar.barID);
+      });
     });
   };
 
