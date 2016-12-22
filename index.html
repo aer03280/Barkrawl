@@ -52,7 +52,7 @@
       </div>
     </nav>
     <section id="user-form-container" class="container">
-      <form class="form-inline" id="user-form">
+      <form class="form-inline" onsubmit="return false" id="user-form">
         <div class="form-group" id="user-location-container">
           <label for="inputLocation" id="user-location-label">Enter Your Location:</label>
           <input type="text" class=form-control id="user-location" placeholder="Address or Zipcode">
@@ -121,7 +121,6 @@
         </div>
       </div>
     </section>
-                        <!-- Data/Tokens -->
                         <!-- Vendors -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -143,7 +142,5 @@
     <script src="/scripts/controllers/aboutController.js"></script>
     <script src="/scripts/controllers/mapController.js"></script>
     <script src="/scripts/controllers/routes.js"></script>
-
-
   </body>
 </html>
