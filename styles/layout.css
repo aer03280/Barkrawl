@@ -39,5 +39,6 @@
 
 .dev-pic {
   display: inline-block;
-  margin: 5%;
+  /*margin: 5%;*/
+  padding: 1em;
 }
