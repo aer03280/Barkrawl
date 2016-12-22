@@ -5,9 +5,8 @@
     // ctx.params.id // you want this to be your barID;
     $('#about-view').hide();
     $('#map-view').hide();
+    $('#user-form-container').hide();
     $('#bar-view').show();
-
-    Bar.allBars;
 
     webDB.execute(
     'SELECT * FROM bars_database WHERE id=' + ctx.params.id,
