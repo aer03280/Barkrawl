@@ -11,6 +11,7 @@
 
   mapView.setMarkers = function() {
     mapView.deleteOldMarkers();
+    localStorage.setItem('Bar.allBars', JSON.stringify(Bar.allBars));
     Bar.allBars.forEach(function(bar){
       var coordinates = {
         lat: bar.latitude,

@@ -23,7 +23,7 @@
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
       'name VARCHAR NOT NULL, ' +
-      'barid VARCHAR NOT NULL' +
+      // 'barID VARCHAR NOT NULL' +
       'latitude FLOAT NOT NULL, ' +
       'longitude FLOAT NOT NULL, ' +
       'address VARCHAR NOT NULL, ' +
@@ -35,6 +35,8 @@
       function(){
         console.log('table render successful');
         mapView.setLocation();
+        var setLocalStorage = localStorage.setItem('Bar.allBars', JSON.stringify(Bar.allBars));
+
       }
   );
   };
@@ -43,8 +45,8 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO bars_database (name, barid, latitude, longitude, address, phone, image, price, rating, closed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);',
-          'data': [this.name, this.barID, this.latitude, this.longitude, this.address, this.phone, this.image, this.price, this.rating, this.closed]
+          'sql': 'INSERT INTO bars_database (name, latitude, longitude, address, phone, image, price, rating, closed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);',
+          'data': [this.name, this.latitude, this.longitude, this.address, this.phone, this.image, this.price, this.rating, this.closed]
         }
       ]
     );
@@ -52,6 +54,7 @@
 
   Bar.requestData = function(callback){
     Bar.allBars = [];
+    console.log('Bar.allBars', Bar.allBars);
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
@@ -70,5 +73,7 @@
     });
   };
   Bar.createTable();
+
+
   module.Bar = Bar;
 })(window);
