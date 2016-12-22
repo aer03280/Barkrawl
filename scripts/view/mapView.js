@@ -76,7 +76,7 @@
       if (mapView.userLocation === ''){
         sweetAlert('Not to be ruff, but you should enter at least something.');
       } else {
-        Bar.requestData();
+        Bar.requestData(Bar.insertRecord);
       }
     });
   };
