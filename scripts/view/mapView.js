@@ -1,6 +1,7 @@
 'use strict';
 (function(module){
   var mapView = {};
+  mapView.markers = [];
   mapView.userLocation = '';
 
   mapView.toHtml = function(){
@@ -9,6 +10,7 @@
   };
 
   mapView.setMarkers = function() {
+    mapView.deleteOldMarkers();
     Bar.allBars.forEach(function(bar){
       var coordinates = {
         lat: bar.latitude,
@@ -20,12 +22,15 @@
         icon:'/../../img/paw-icon.png',
         map: map.mapObj
       });
+      mapView.markers.push(marker);
     });
   };
 
-  // mapView.deleteAllMarkers = function() {
-  //   setMapOnAll(null);
-  // };
+  mapView.deleteOldMarkers = function() {
+    mapView.markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
+  };
 
   var configQuery = function(val){
     var newVal1 = val.split(' ').join('');

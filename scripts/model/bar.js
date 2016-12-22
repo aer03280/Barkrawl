@@ -34,7 +34,6 @@
       function(){
         console.log('table render successful');
         mapView.setLocation();
-        // Bar.requestData();
       }
   );
   };
