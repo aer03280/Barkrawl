@@ -43,11 +43,9 @@
       var inputLocation = document.getElementById('user-location').value;
       mapView.userLocation = configQuery(inputLocation);
       if (mapView.userLocation === ''){
-        sweetAlert('Sorry, that is not a valid entry');
+        sweetAlert('Not to be ruff, but you should enter at least something.');
       } else {
         Bar.requestData();
-
-        //moved mapView.setMarkers() to happen in proper call order
       }
     });
   };
