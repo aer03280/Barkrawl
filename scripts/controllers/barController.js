@@ -6,6 +6,7 @@
     $('#about-view').hide();
     $('#bar-view').show();
     $('#map-view').hide();
+    $('#user-form-container').hide();
     // Bar.allBars
     Bar.requestData(function(allBars){
       console.log('Booya! Allbars!', allBars);
