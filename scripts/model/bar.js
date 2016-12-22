@@ -16,7 +16,7 @@
     this.price = opts.price;
     this.rating = opts.rating;
     this.closed = opts.is_closed;
-    Bar.allBars.push(this);
+    // Bar.allBars.push(this);
   }
   Bar.createTable = function(){
     webDB.execute(
@@ -35,8 +35,6 @@
       function(){
         console.log('table render successful');
         mapView.setLocation();
-        var setLocalStorage = localStorage.setItem('Bar.allBars', JSON.stringify(Bar.allBars));
-
       }
   );
   };
@@ -52,9 +50,17 @@
     );
   };
 
+  Bar.dropTable = function(){
+    webDB.execute('DROP TABLE bars_database', function(){
+      console.log('fuuuu');
+    });
+  };
   Bar.requestData = function(callback){
     Bar.allBars = [];
     console.log('Bar.allBars', Bar.allBars);
+    if (bars_database){
+      Bar.dropTable();
+    };
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
@@ -73,7 +79,5 @@
     });
   };
   Bar.createTable();
-
-
   module.Bar = Bar;
 })(window);
