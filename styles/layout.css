@@ -1,6 +1,44 @@
 /*#about-page {
   display:none;
 }*/
-.featurette-divider {
-    margin: 80px 0;
+#developers {
+  /*margin: 0em 12em 6em;*/
+  margin-left: 8em;
+}
+
+#dev-head {
+  margin: 0em 10em;
+}
+
+ #about {
+  width:90%;
+  margin: 0% 5% 5%;
+  line-height: 1;
+  padding: 2em;
+  border-radius: 2em;
+  background-color: #C2BFBF;
+
+}
+
+.about-div {
+  border-radius: 1.8em;
+  border: 1px solid #C2BFBF;
+  background-color:#E1E8E6;
+  width:70%;
+  margin-left: 6em;
+  margin-top: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.lead{
+  display: inline-block;
+  line-height: 1.5;
+  width: 60%;
+}
+
+.dev-pic {
+  display: inline-block;
+  /*margin: 5%;*/
+  padding: 1em;
 }
