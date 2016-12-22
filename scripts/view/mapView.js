@@ -4,9 +4,22 @@
   mapView.markers = [];
   mapView.userLocation = '';
 
+  //to prevent our user from 'submitting' and refreshing the page.
+  // window.addListener('onload', function(event){
+  //   event.preventDefault();
+  //   $('#user-location').preventDefault();
+  // });
+
   mapView.toHtml = function(){
     var template = Handlebars.compile();
     return template;
+  };
+
+  mapView.centerMap = function() {
+    var barLat = Bar.allBars[0].latitude;
+    var barLng = Bar.allBars[0].longitude;
+    var newCenter = {lat: barLat, lng: barLng};
+    map.mapObj.panTo(newCenter);
   };
 
   mapView.setMarkers = function() {
@@ -30,6 +43,7 @@
         page('/bar/' + bar.barID);
       });
     });
+    mapView.centerMap();
   };
 
   mapView.deleteOldMarkers = function() {

@@ -62,9 +62,12 @@
           curBar.insertRecord();
         });
         mapView.setMarkers();
-        if (callback) {
-          callback(Bar.allBars);
-        }
+        // if (callback) {
+        //   callback(Bar.allBars);
+        // }
+      },
+      error: function(jqXHR) {
+        sweetAlert('Oops! Street addresses work best, try a different search!');
       }
     });
   };
