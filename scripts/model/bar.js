@@ -23,6 +23,7 @@
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
       'name VARCHAR NOT NULL, ' +
+      'barid VARCHAR NOT NULL' +
       'latitude FLOAT NOT NULL, ' +
       'longitude FLOAT NOT NULL, ' +
       'address VARCHAR NOT NULL, ' +
@@ -42,8 +43,8 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO bars_database (name, latitude, longitude, address, phone, image, price, rating, closed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);',
-          'data': [this.name, this.latitude, this.longitude, this.address, this.phone, this.image, this.price, this.rating, this.closed]
+          'sql': 'INSERT INTO bars_database (name, barid, latitude, longitude, address, phone, image, price, rating, closed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);',
+          'data': [this.name, this.barID, this.latitude, this.longitude, this.address, this.phone, this.image, this.price, this.rating, this.closed]
         }
       ]
     );
