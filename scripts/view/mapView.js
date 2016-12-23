@@ -23,7 +23,7 @@
   };
 
   mapView.setMarkers = function() {
-    mapView.deleteOldMarkers();
+    mapView.markers = [];
     // get all the bar from webDB
     // loop over bars
     // add marker to map
