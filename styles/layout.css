@@ -1,14 +1,13 @@
-/*#about-page {
-  display:none;
-}*/
-
-/*#dev-h2 {
-  margin: 4em 25em;
-}*/
-
+/*About-Page-Layout**/
 .dev-head {
   font-size: 3em;
-  margin: 0 5em;
+  margin: 2em 0.5em 0em;
+  color:#f18d00;
+}
+
+#dev-header-container {
+  width:100%;
+  margin-left: 2em;
 }
 
  #about {
@@ -24,7 +23,9 @@
 
 
 .dev-name {
-  /*margin-left:10em;*/
+ color:#f18d00;
+ font-weight: 600;
+ font-size: 1.5em;
 }
 
 .about-div {
@@ -47,15 +48,17 @@
   width: 60%;
 }
 
-#irvine-text {
-  font-size: 1.5em;
-}
-
 .dev-pic {
-  /*display: inline-block;*/
-  /*margin: 5%;*/
   padding: 0.5em;
   margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+#site-nav {
+  display: block;
+  padding-left: 3em;
+  padding-right:0.8em;
+  line-height: 2.5;
 }
 
 /*Template Styles*/
@@ -89,7 +92,6 @@
 }*/
 @media(max-width: 760px) {
 body {
-    /*display: block;*/
     width: 95%;
   }
 div {

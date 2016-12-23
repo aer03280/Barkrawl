@@ -1,21 +1,12 @@
 
 #user-form-container {
-  /*position:absolute;
-  top:30%;
-  left:0;
-  right:0;
-  margin: 0 1em;
-  z-index:2;*/
   padding: 0.8em 1em;
   position:fixed;
   top:10%;
   left:0%;
   right:0;
   margin:0 30%;
-  /*padding: 2em;*/
   z-index:1;
-  /*border:1px solid black;
-  background-color: ;*/
   width:50%;
 }
 #user-form {
@@ -37,8 +28,6 @@
 #user-form #user-location {
   width:90%;
   opacity: 1;
-  /*margin-right: 8%;
-  padding-right: 0.4em;*/
 }
 
 #user-form #user-submit-btn {
