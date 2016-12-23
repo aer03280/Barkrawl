@@ -54,7 +54,8 @@
 #app-header {
   padding-top: 0.4em;
   font-weight: 500;
-
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 #app-info {
