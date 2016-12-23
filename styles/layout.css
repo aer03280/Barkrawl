@@ -1,24 +1,30 @@
 /*#about-page {
   display:none;
 }*/
-#developers {
-  /*margin: 0em 12em 6em;*/
-  margin-left: 8em;
-}
 
-#dev-head {
-  margin: 0em 10em;
+/*#dev-h2 {
+  margin: 4em 25em;
+}*/
+
+.dev-head {
+  font-size: 3em;
+  margin: 0 5em;
 }
 
  #about {
   box-sizing: border-box;
-  width:90%;
-  margin: 0% 5% 5%;
-  line-height: 1;
-  padding: 2em;
+  width:100%;
+  /*margin: 0% 25% 5%;*/
+  line-height: 1.6;
+  padding: 5em;
   border-radius: 2em;
   background-color: #C2BFBF;
+  opacity: 0.96;
+}
 
+
+.dev-name {
+  /*margin-left:10em;*/
 }
 
 .about-div {
@@ -28,10 +34,11 @@
   background-color:#E1E8E6;
   width:70%;
   margin-left: 6em;
-  margin-top: 3em;
+  margin-top: 6em;
   margin-bottom: 3em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  opacity: 0.96;
 }
 
 .lead{
@@ -40,11 +47,15 @@
   width: 60%;
 }
 
+#irvine-text {
+  font-size: 1.5em;
+}
+
 .dev-pic {
-  display: inline-block;
+  /*display: inline-block;*/
   /*margin: 5%;*/
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 0.5em;
+  margin-top: 5em;
 }
 
 /*Template Styles*/
@@ -70,3 +81,25 @@
     width: 45%;
   }
 }*/
+
+/*@media only screen (min-width: 768px) and (max-width:979px) {
+  #developers {
+    float:left;
+  }
+}*/
+@media(max-width: 760px) {
+body {
+    /*display: block;*/
+    width: 95%;
+  }
+div {
+  width:100%;
+}
+  .dev-head {
+    float:right;
+  }
+  #about-div {
+    margin-right: 3em;
+    height:
+  }
+}
