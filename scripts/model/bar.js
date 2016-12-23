@@ -18,7 +18,7 @@
     this.closed = opts.is_closed;
     Bar.allBars.push(this);
   }
-  Bar.createTable = function(){
+  Bar.createTable = function(callback){
     webDB.execute(
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
@@ -34,7 +34,8 @@
       'closed BOOLEAN);',
       function(){
         console.log('table render successful');
-        mapView.setLocation();
+        callback();
+        // mapView.setLocation();
       }
   );
   };
@@ -87,7 +88,6 @@
       }
     });
   };
-  Bar.createTable();
-
+  
   module.Bar = Bar;
 })(window);

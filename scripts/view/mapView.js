@@ -71,12 +71,13 @@
 
   mapView.setLocation = function(){
     $('#user-submit-btn').on('click', function(){
+      console.log('am i loged twice?');
       var inputLocation = document.getElementById('user-location').value;
       mapView.userLocation = configQuery(inputLocation);
       if (mapView.userLocation === ''){
         sweetAlert('Not to be ruff, but you should enter at least something.');
       } else {
-        Bar.requestData(Bar.insertRecord);
+        Bar.requestData(function(){});
       }
     });
   };

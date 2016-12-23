@@ -1,7 +1,12 @@
 'use strict';
 (function(module) {
   var mapController = {};
+
   mapController.reveal = function() {
+    Bar.createTable(function(){
+      mapView.setLocation();
+    });
+
     $('#about-view').hide();
     $('#bar-view').hide();
     $('#home-tab').addClass('active');
