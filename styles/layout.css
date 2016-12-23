@@ -49,11 +49,11 @@
 
 /*Template Styles*/
 
-.clearfix {
+/*.clearfix {
   width: 100%;
   height: 0px;
   margin-bottom: 40px;
-}
+}*/
 
 /*If user is on a larger screen(laptop/desktop), image displays alongside info card, currently media query isnt activating*/
 
