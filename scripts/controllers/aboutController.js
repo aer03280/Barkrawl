@@ -8,7 +8,6 @@
     $('#map-view').hide();
     $('#user-form-container').hide();
     $('#bar-view').hide();
-    console.log('This is a meaningful message');
   };
   module.aboutController = aboutController;
 

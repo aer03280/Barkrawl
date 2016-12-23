@@ -23,7 +23,6 @@
     'CREATE TABLE IF NOT EXISTS bars_database (' +
       'id INTEGER PRIMARY KEY, ' +
       'name VARCHAR NOT NULL, ' +
-      // 'barID VARCHAR NOT NULL' +
       'latitude FLOAT NOT NULL, ' +
       'longitude FLOAT NOT NULL, ' +
       'address VARCHAR NOT NULL, ' +
@@ -33,7 +32,6 @@
       'rating FLOAT NOT NULL, ' +
       'closed BOOLEAN);',
       function(){
-        console.log('table render successful');
         mapView.setLocation();
       }
   );
@@ -56,7 +54,6 @@
       function(result){
         if(result.length){
           mapView.deleteOldMarkers();
-          console.log('found old records, deleting');
           webDB.execute('DELETE FROM bars_database');
         }
       }
@@ -65,7 +62,6 @@
 
   Bar.requestData = function(callback){
     Bar.allBars = [];
-    console.log('Bar.allBars', Bar.allBars);
     Bar.deleteOldRecords();
     $.ajax({
       type: 'GET',
