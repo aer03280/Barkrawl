@@ -22,11 +22,5 @@
       }
   );
   };
-
-
-  //   console.log('Bar.allBars:', allBars);
-  //   next();
-  // };
-
   module.barController = barController;
 })(window);

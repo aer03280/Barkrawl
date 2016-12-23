@@ -38,7 +38,7 @@
 </script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
+    <nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color:#e3f2fd;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-bootstrap-collapse">
@@ -82,46 +82,51 @@
       <div class="container" id="about-page">
         <div class="row" id="about">
           <h1 id="app-header">What is Barkrawl?<h1>
-          <div class="col-sm-12 col-md-12">
+          <div class="col-md-12">
             <p id="app-info">Barkrawl is a conveinent web application where you can input your location and while you are out with your pup, and you are in the mood for a beer, our application will find dog-friendly bars near you. </p>
           </div>
         </div>
-        <div class="row featurette" id="developers">
-          <h2 id="dev-head">Meet the Developers</h2>
-          <div class="col-md-10 about-div">
-            <h3>Ashley</h3>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div class="col-sm-4">
-              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/ash.jpg" alt="ash.jpg" width="300" height="300">
-            </div>
+        <div class="row" id="developers">
+          <div class="col-md-8" id="dev-header-container">
           </div>
-          <div class="col-md-10 about-div">
-            <h3>Nikko</h3>
+          <h2 class="dev-head">Meet The Developers</h2>
+            <!-- <div class="col-md-8" id="dev-h2"><h2 class="dev-head">The</h2></div>
+            <div class="col-md-8" id="dev-h3"><h2 class="dev-head">Developers</h2></div>
+          </div> -->
+          <div class="col-md-10 about-div " id="ashley">
+            <h3 class="dev-name">Ashley</h3>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="col-md-4">
-              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Nikko.jpg" alt="Nikko.jpg" width="300" height="300">
+              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/ash.jpg" alt="ash.jpg" width="400" height="400">
             </div>
           </div>
-          <div class="col-md-10 about-div">
-            <h3>Irvine</h3>
+          <div class="col-md-8 about-div" id="nikko">
+            <h3 class="dev-name">Nikko</h3>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="col-md-4">
-              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Irvine.jpg" alt="Irvine.jpg" width="300" height="300">
+              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Nikko.jpg" alt="Nikko.jpg" width="400" height="400">
             </div>
           </div>
-          <div class="col-md-10 about-div">
-            <h3>Devon</h3>
+          <div class="col-md-8 about-div" id="devon">
+            <h3 class="dev-name">Devon</h3>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="col-md-4">
-              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Devon.jpg" alt="Devon.jpg" width="300" height="300">
+              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Devon.jpg" alt="Devon.jpg" width="400" height="400">
+            </div>
+          </div>
+          <div class="col-md-8 about-div" id="irvine">
+            <h3 class="dev-name">Irvine</h3>
+            <p class="lead" id="irvine-text">
+              A former employee from an oil company. Believes the oil industry is in a current downturn and needed to discover a new passion. To make a career change, Irvine decided to move to Seattle and join Code Fellows to invest in the most important asset, one self. He is excited about where this new chapter will take him and looks forward to opening new connections. When he is not coding, he enjoys playing soccer, salsa dance, and working out at the gym. He is also a proud Windows Tablet user while the rest of his teammates use Macs.
+            </p>
+            <div class="col-md-4">
+              <img class="featurette-image img-responsive img-thumbnail center-block dev-pic" src="img/Irvine.jpg" alt="Irvine.jpg" width="400" height="400">
             </div>
           </div>
         </div>
