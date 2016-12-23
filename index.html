@@ -14,7 +14,7 @@
     <title>Barkrawl</title>
 <!-- bar form -->
 <script id="bar-template"  type="text/x-handlebars-template">
-  <div class="back-row-container"><a href="/" class="back-button">Edit Search</a></div>
+
     <div class="row-container">
       <div class="clearfix"></div>
       <div class="barText">
@@ -24,8 +24,8 @@
         <p>Price: {{price}}</p>
         <p>Rating: {{rating}}/5 Stars</p>
         <p>Is closed: {{closed}}</p>
-        <a class="btn-direction">&nbsp;&nbsp;Get Driving Directions</a>
-        <a class="btn-googlemap" href="https://www.google.com/maps/dir//{{longitude}},{{latitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a>
+        <div class="back-row-container"><a href="/" class="back-button">Edit Search</a></div>
+        <a class="btn-googlemap" href="https://www.google.com/maps/dir//{{latitude}},{{longitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a>
       <div class="bar-map"></div>
     </div>
     <img class="img-responsive bar-image" src="{{image}}">
