@@ -11,6 +11,7 @@
 }
 
  #about {
+  box-sizing: border-box;
   width:90%;
   margin: 0% 5% 5%;
   line-height: 1;
@@ -21,6 +22,7 @@
 }
 
 .about-div {
+  box-sizing: border-box;
   border-radius: 1.8em;
   border: 1px solid #C2BFBF;
   background-color:#E1E8E6;

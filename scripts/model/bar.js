@@ -57,7 +57,7 @@
     Bar.allBars = [];
     console.log('Bar.allBars', Bar.allBars);
 
-    Bar.dropTable();
+    // Bar.dropTable();
     $.ajax({
       type: 'GET',
       url: '/yelp/v3/businesses/search?categories=bars&term=dogs%20allowed&location='
