@@ -65,67 +65,88 @@
   padding-bottom: 0.4em;
 }
 
-/**/Bar Results Form
+/**************/Bar Results Form
 
 .back-row-container {
-  /**/back button
+  margin-top: 25px;
 }
 
-#textContainer {
+#all-form {
+  margin-top: 5%;
+  background-color: #bfc0c1;
+}
+
+#list-text {
+  display list-style-type: none;
+}
+
+.text-container {
   font-family: 'PT Sans', sans-serif;
-  color: red;
-  background-color: green;
-  display: block;
-  float:left;
-  /*padding-left: 1em;*/
-  height: 100%;
-  width: 50%;
-  overflow: scroll;
-}
-
-.row-container {
-  background-color: orange;
-  height: 65%;
-  width: 90%;
-  margin-left: 5%;
-}
-
-.bar-map {
-  background-color: blue;
+  color: black;
   display: block;
   float: right;
+  padding-right: 8%;
+  position: relative;
+  margin-top: 15%;
+}
+
+#name-span {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-left: 5%;
+
+}
+.row-container {
+  margin-top: 3%;
+  width: 100%;
   height: 100%;
-  width: 50%;
-  overflow: hidden;
 }
 
-.barText {
+.bar-text {
 font-family: 'PT Sans', sans-serif;
-color: red;
+color: black;
 font-size: 1.5em;
-padding-left: 3em;
-overflow: scroll;
+float: right;
+padding-right: 3%;
+padding-top: 1%;
 }
 
-#nameText {
+#name-text {
   font-family: 'Montserrat', sans-serif;
   color: black;
-  text-shadow: 2px 2px 5px grey;
+  text-shadow: 2px 2px 8px #a8adb5;
   font-style: italic;
-  font-size: 2em;
+  font-size: 5em;
   text-align: left;
+  padding-left: .25em;
 }
 
-.btn-direction {
+#btn-direction {
   color: black;
   padding-right: 2em;
 }
 
 .btn-googlemap {
-
+/**/directions
 }
 
-.bar-image {
-  height: 300px;
-  width: 300px;
+#image-container {
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: relative;
+  margin-left: 5%;
+}
+
+.back-button {
+  font-size: 5em;
+  color: black;
+  margin-left: 5%;
+}
+
+.img-responsive {
+  box-shadow: 11px 8px 5px 0px rgba(0,0,0,0.75);
+  height: 100%;
+  width: 100%;
 }

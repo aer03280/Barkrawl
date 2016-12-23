@@ -15,21 +15,25 @@
 <!-- bar results form -->
 <script id="bar-template"  type="text/x-handlebars-template">
 
-    <div class="row-container">
-      <div class="clearfix"></div>
-      <div class="barText">
-        <h2 id="nameText">{{name}}</h2>
+  <div class="clearfix"></div>
+  <div id="all-form">
+  <!-- <div class="row-container"> -->
+    <div class="back-row-container"><a href="/" class="back-button">&#8592</a></div>
+    <div id="name-span"><h2 id="name-text">{{name}}</h2></div>
+    <!-- <div class="text-container"> -->
+      <div class="bar-text">
         <p>{{address}}</p>
         <p>{{phone}}</p>
         <p>Price: {{price}}</p>
         <p>Rating: {{rating}}/5 Stars</p>
         <p>Is closed: {{closed}}</p>
-        <div class="back-row-container"><a href="/" class="back-button">Edit Search</a></div>
-        <a class="btn-googlemap" href="https://www.google.com/maps/dir//{{latitude}},{{longitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a>
-      <div class="bar-map"></div>
-    </div>
-    <img class="img-responsive bar-image" src="{{image}}">
-  </div>
+        <div id="btn-direction"><a class="btn-googlemap" href="https://www.google.com/maps/dir//{{latitude}},{{longitude}}" target="_blank">&nbsp;&nbsp;Go to Google Map</a></div>
+      </div>
+      <div id="image-container"><img class="img-responsive" src="{{image}}"></div>
+    <!-- </div> -->
+    <!-- <div class="bar-map">mapgoeshere</div> -->
+  <!-- </div> -->
+</div>
 </script>
   </head>
   <body>
