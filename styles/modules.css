@@ -64,15 +64,12 @@
   padding-bottom: 0.4em;
 }
 
-/**************/Bar Results Form
-
 .back-row-container {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 #all-form {
-  margin-top: 5%;
-  /*background-color: #bfc0c1;*/
+  margin-top: 3%;
 }
 
 #list-text {
@@ -94,7 +91,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   margin-left: 5%;
-
+  margin-top: -2em;
 }
 .row-container {
   margin-top: 3%;
@@ -105,9 +102,10 @@
 .bar-text {
 font-family: 'PT Sans', sans-serif;
 color: black;
-font-size: 1.5em;
+font-size: 2em;
 float: right;
-padding-right: 3%;
+padding-right: 8%;
+padding-left: 2%;
 padding-top: 1%;
 }
 
@@ -148,4 +146,6 @@ padding-top: 1%;
   box-shadow: 11px 8px 5px 0px rgba(0,0,0,0.75);
   height: 100%;
   width: 100%;
+  margin-bottom: 1em;
+  margin-top: -.5em;
 }

@@ -39,7 +39,7 @@
         var marker = new google.maps.Marker({
           position: coordinates,
           animation: google.maps.Animation.DROP,
-          icon:'/../../img/paw-icon.png',
+          icon:'/../../Img/paw-icon.png',
           map: map.mapObj,
           id: bar.id
         });
